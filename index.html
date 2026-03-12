@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measure Academic Performance With Precision</title>
+    <!-- Link to the external CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google Fonts for a modern typeface -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-container">
+        <h1>Measure Academic Performance With Precision</h1>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter student name">
+            </div>
+
+            <div class="marks-grid">
+                <div class="input-group">
+                    <label for="subject1">Subject 1 (out of 100)</label>
+                    <input type="number" id="subject1" min="0" max="100" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="subject2">Subject 2 (out of 100)</label>
+                    <input type="number" id="subject2" min="0" max="100" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="subject3">Subject 3 (out of 100)</label>
+                    <input type="number" id="subject3" min="0" max="100" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="subject4">Subject 4 (out of 100)</label>
+                    <input type="number" id="subject4" min="0" max="100" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="subject5">Subject 5 (out of 100)</label>
+                    <input type="number" id="subject5" min="0" max="100" placeholder="0">
+                </div>
+            </div>
+
+            <!-- Button triggers the calculatePerformance function when clicked -->
+            <button id="calculateBtn" onclick="calculatePerformance()">Calculate Performance</button>
+        </div>
+
+        <!-- This section will be hidden initially and shown when results exist -->
+        <div id="resultSection" class="result-section hidden">
+            <!-- Results will be injected here by JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Link to external JavaScript logic -->
+    <script src="script.js"></script>
+</body>
+</html>

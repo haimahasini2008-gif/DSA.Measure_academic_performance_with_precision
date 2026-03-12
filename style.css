@@ -1,0 +1,144 @@
+/* Basic reset for consistent sizing across browsers */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    /* Soft gradient background */
+    background: linear-gradient(135deg, #e2e2e2 0%, #c9d6ff 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Main card container holding all elements */
+.card-container {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Grouping sections */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+/* User inputs styling with focus state enhancements */
+input {
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Grid layout for subject marks */
+.marks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Stylish button with hover and active animations */
+button {
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4f46e5;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Results section styling */
+.result-section {
+    margin-top: 30px;
+    padding: 24px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    border-left: 5px solid #6366f1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Hidden class to hide results initially */
+.result-section.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.result-item {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+}
+
+.result-item strong {
+    color: #2d3748;
+}
+
+/* Special visual styles for the performance tip and quotes */
+.tip, .quote {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.tip {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+
+.quote {
+    background-color: #fdf4ff;
+    color: #86198f;
+}
